@@ -37,7 +37,20 @@
           </div>
 
           <div class="inner cover">
-            <!-- content -->
+            <div class="league_table container">
+              {% for entry in standings %}
+
+                <div class="club_row row">
+                   <div class="col-md-4">
+                     <img class="crest_pic" src="{{entry.crestURI}}" />
+                   </div>
+                   <div class="col-md-4">
+                     {{ entry.teamName }}
+                   </div>
+                </div>
+
+              {% endfor %}
+            </div>
           </div>
 <br />
           <div class="mastfoot">
