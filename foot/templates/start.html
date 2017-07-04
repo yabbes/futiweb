@@ -5,19 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% load static %}
-
-    <link rel="stylesheet" type="text/css" href="{% static 'foot/style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'foot/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'foot/cover.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'foot/style.css' %}" />
+
 
     <title>Futiweb</title>
   </head>
   <body>
-    <h1>Futiweb</h1>
+    <div class="site-wrapper">
 
+      <div class="site-wrapper-inner">
 
+        <div class="cover-container">
 
-    <br /><br />
-    powered by {{name}} and {{api_name}}
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h2 class="masthead-brand">Futiweb</h2>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Choose the country</h1>
+            <p class="lead">Futiweb helps you being up to date with the latest football standings via the <a href="http://www.football-data.org">football-data.org API</a> in the league of your desire.</p>
+            <p >Just pick your country
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>made by {{name}} using {{api_name}}, Django and Bootstrap</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
 
     <script src="{% static 'foot/js/bootstrap.min.js' %}"></script>
 
