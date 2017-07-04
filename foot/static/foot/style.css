@@ -16,3 +16,13 @@ h1 {
   height: 1em;
   width: 1em;
 }
+
+.league_table .head {
+  margin-top: 10px;
+  background-color: #edd5b2;
+
+}
+
+.club-row {
+  display: inline;
+}
