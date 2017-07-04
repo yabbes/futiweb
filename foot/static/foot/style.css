@@ -1,3 +1,13 @@
 h1 {
   font-size: 40px;
 }
+
+.select-flag {
+  height: 5em;
+  width: 8em;
+  padding: 2px;
+}
+
+.select-box {
+  margin: 5px;
+}
