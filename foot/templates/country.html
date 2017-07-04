@@ -32,17 +32,12 @@
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">Choose the country</h1>
-            <p class="lead">Futiweb helps you being up to date with the latest football standings via the <a href="http://www.football-data.org">football-data.org API</a> in the league of your desire.</p>
-            <p >Just pick your country
-            </p>
+            {% static 'foot/img/' as baseUrl %}
+            <img class="select-flag" src="{{ baseUrl }}{{ country }}.png"></img>
           </div>
 
           <div class="inner cover">
-            <div class="select-box">
-              <img class="select-flag" src="{% static 'foot/img/en.png' %}"></img><a href="fr/"><img class="select-flag" src="{% static 'foot/img/fr.png' %}"></img></a>
-              <img class="select-flag" src="{% static 'foot/img/es.png' %}"></img><a href="de/"><img class="select-flag" src="{% static 'foot/img/de.png' %}"></img></a><img class="select-flag" src="{% static 'foot/img/it.png' %}"></img>
-            </div>
+            <!-- content -->
           </div>
 <br />
           <div class="mastfoot">

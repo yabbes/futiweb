@@ -18,3 +18,19 @@ def main(request):
         'api_name': 'football-data.org API'
     }
     return render(request, 'start.html', context)
+
+
+def de(request):
+    context = {
+        'name': 'yabbes',
+        'country': 'de'
+    }
+    return render(request, 'country.html', context)
+
+
+def fr(request):
+    context = {
+        'name': 'yabbes',
+        'country': 'fr'
+    }
+    return render(request, 'country.html', context)
