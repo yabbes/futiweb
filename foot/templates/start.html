@@ -2,13 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% load static %}
 
     <link rel="stylesheet" type="text/css" href="{% static 'foot/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'foot/bootstrap.min.css' %}" />
+
     <title>Futiweb</title>
   </head>
   <body>
-    <h1>Hallo auf Futiweb</h1>
+    <h1>Futiweb</h1>
+
+
+
+    <br /><br />
+    powered by {{name}} and {{api_name}}
+
+    <script src="{% static 'foot/js/bootstrap.min.js' %}"></script>
 
   </body>
 </html>
