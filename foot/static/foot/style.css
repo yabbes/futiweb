@@ -20,9 +20,10 @@ h1 {
 .league_table .head {
   margin-top: 10px;
   background-color: #edd5b2;
+  display: flex;
 
 }
 
-.club-row {
-  display: inline;
+.club_row {
+  display: flex;
 }

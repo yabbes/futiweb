@@ -39,19 +39,19 @@
           <div class="inner cover">
             <div class="league_table container-fluid">
               <div class="league_table row head">
-                <div class="col-sm-1">
+                <div style="flex:1;">
                   Crest
                 </div>
-                <div class="col-sm-4">
+                <div style="flex:3;">
                   Club
                 </div>
-                <div class="col-sm-2">
+                <div style="flex:1;">
                   Diff
                 </div>
-                <div class="col-sm-2">
+                <div style="flex:1;">
                   Matchday
                 </div>
-                <div class="col-sm-2">
+                <div style="flex:1;">
                   Points
                 </div>
               </div>
@@ -59,21 +59,21 @@
               {% for entry in standings %}
 
                 <div class="club_row row-fluid">
-                   <div class="col-sm-1">
-                     <img class="crest_pic" src="{{entry.crestURI}}" />
-                   </div>
-                   <div class="col-sm-4">
-                     {{ entry.teamName }}
-                   </div>
-                   <div class="col-sm-2">
-                     {{ entry.goalDifference }}
-                   </div>
-                   <div class="col-sm-2>">
-                     {{ entry.playedGames }}
-                   </div>
-                   <div class="col-sm-2">
-                     {{ entry.points }}
-                   </div>
+                  <div style="flex:1;">
+                    <img class="crest_pic" src="{{entry.crestURI}}" />
+                  </div>
+                  <div style="flex:3;">
+                    {{ entry.teamName }}
+                  </div>
+                  <div style="flex:1;">
+                    {{ entry.goalDifference }}
+                  </div>
+                  <div style="flex:1;">
+                    {{ entry.playedGames }}
+                  </div>
+                  <div style="flex:1;">
+                    {{ entry.points }}
+                  </div>
 
                 </div>
 
