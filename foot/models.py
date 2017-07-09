@@ -29,7 +29,10 @@ class StandingsNew():
 
     def get_standings(self):
         country_source = self.sources[self.country]
-        table = urllib.request.urlopen(country_source)
-        table_str = table.read().decode('utf-8')
-        table_obj = json.loads(table_str)
-        return table_obj['standing']
+        try:
+            table = urllib.request.urlopen(country_source)
+            table_str = table.read().decode('utf-8')
+            table_obj = json.loads(table_str)
+            return table_obj['standing']
+        except Exception as e:
+            return None

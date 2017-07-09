@@ -44,6 +44,7 @@ def fr(request):
     }
     return render(request, 'country.html', context)
 
+
 def en(request):
     standings_new = StandingsNew('en')
     standings = standings_new.get_standings()
@@ -54,6 +55,7 @@ def en(request):
     }
     return render(request, 'country.html', context)
 
+
 def it(request):
     standings_new = StandingsNew('it')
     standings = standings_new.get_standings()
@@ -63,6 +65,7 @@ def it(request):
         'standings': standings
     }
     return render(request, 'country.html', context)
+
 
 def es(request):
     standings_new = StandingsNew('es')
