@@ -7,7 +7,10 @@ Still a work in progress but my first little web app based on the Django framewo
 
 <img src="screen.png">
 
-Needs to run in a python 3 environment because of urllib.request that is used to retrieve the data.
+
+<img src="table-fr.png">
+
+Needs to run in a Python3 environment because of urllib.request that is used to retrieve the data.
 
 Of course this project should not be deployed as is, debug mode is turned on etc..
 
